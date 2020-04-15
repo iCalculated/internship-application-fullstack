@@ -24,6 +24,7 @@ async function getResponseStream(url) {
   return rewriter.transform(response)
 }
 
+// TODO: make this more succinct
 class LinkRewriter {
   element(el) {
       el.setAttribute('href','https://github.com/iCalculated')
